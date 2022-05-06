@@ -1,0 +1,86 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "receivers",
+        "type": "address[]"
+      },
+      {
+        "internalType": "string[]",
+        "name": "timestamp",
+        "type": "string[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "value",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "string[]",
+        "name": "paymentType",
+        "type": "string[]"
+      },
+      {
+        "internalType": "string[]",
+        "name": "description",
+        "type": "string[]"
+      },
+      {
+        "internalType": "string",
+        "name": "txnId",
+        "type": "string"
+      }
+    ],
+    "name": "addDebitTransaction",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "id",
+        "type": "string"
+      }
+    ],
+    "name": "getDebit",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address[]",
+            "name": "receivers",
+            "type": "address[]"
+          },
+          {
+            "internalType": "string[]",
+            "name": "timestamp",
+            "type": "string[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "value",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "string[]",
+            "name": "paymentType",
+            "type": "string[]"
+          },
+          {
+            "internalType": "string[]",
+            "name": "description",
+            "type": "string[]"
+          }
+        ],
+        "internalType": "struct Accouting.DebitTransaction",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
